@@ -1,0 +1,12 @@
+[1mdiff --git a/src/main/java/com/sparx/railway/ticketapp/backend/collection/PatternDemo.java b/src/main/java/com/sparx/railway/ticketapp/backend/collection/PatternDemo.java[m
+[1mindex 7e89aef..1da4b2d 100644[m
+[1m--- a/src/main/java/com/sparx/railway/ticketapp/backend/collection/PatternDemo.java[m
+[1m+++ b/src/main/java/com/sparx/railway/ticketapp/backend/collection/PatternDemo.java[m
+[36m@@ -24,6 +24,7 @@[m [mpublic class PatternDemo {[m
+ //		pattern20(5);[m
+ //		pattern21(4);[m
+ //		pattern22(7);[m
+[32m+[m[32m        System.out.println("this is to view the diff ");[m
+     }[m
+     /*[m
+      *[m

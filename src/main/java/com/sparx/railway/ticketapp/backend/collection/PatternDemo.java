@@ -24,6 +24,8 @@ public class PatternDemo {
 //		pattern20(5);
 //		pattern21(4);
 //		pattern22(7);
+        System.out.println("this is to view the diff ");
+        System.out.println("this line is added by the develop2.0 branch just to see the conflict");
     }
     /*
      *
