@@ -1,0 +1,43 @@
+#debug: true
+spring:
+  hikari:
+    connectionTimeout: 2000
+    data-source-properties:
+      cachePrepStmts: true
+      cacheResultSetMetadata: true
+      cacheServerConfiguration: true
+      elideSetAutoCommits: true
+      maintainTimeStats: false
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+      rewriteBatchedStatements: true
+      useLocalSessionState: true
+      useServerPrepStmts: true
+    maxLifetime: 300000
+    maximum-pool-size: 10
+    poolName: ${spring.application.name}-hikari-pool
+    idle-timeout: 10000
+    minimum-idle: 5
+    auto-commit: true
+    leak-detection-threshold: 30000
+  banner:
+    location : classpath:/templates/banner.txt
+  datasource:
+    url: jdbc:mysql://localhost:3307/ticketapp
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+server:
+  port: 8005
+security:
+  jwt:
+    secret-key: 3cfa76ef14937c1c0ea519f8fc057a80fcd04a7420f8e8bcd0a7567c272e007b
+    token-validity-seconds: 3600000
+logging:
+  level:
+    org.springframework.security: INFO
+    com.sparx.railway.ticketapp.backend.security: INFO
