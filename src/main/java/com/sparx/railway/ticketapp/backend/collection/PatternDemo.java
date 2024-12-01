@@ -22,8 +22,8 @@ public class PatternDemo {
 //		pattern18(5);
 //		pattern19(5);
 //		pattern20(5);
-//		pattern21(4);
-//		pattern22(7);
+		pattern21(4);
+		pattern22(7);
     }
     /*
      *
